@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
   $("#formOne").submit(function(event) {
-    var fullname = $("input#fullname").val();
+    var fullname = $("input#textToShout").val().toUpperCase();
 
-    $(".fullname").text(fullname);
+    $(".textToShout").text(fullname);
 
     $("#letter").show();
 
